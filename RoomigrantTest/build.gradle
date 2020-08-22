@@ -3,7 +3,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 29
 
     defaultConfig {
         applicationId "dev.matrix.roomigrant.test"
@@ -33,13 +33,13 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     // room
-    implementation 'android.arch.persistence.room:runtime:1.1.1'
-    androidTestImplementation 'android.arch.persistence.room:testing:1.1.1'
-    kapt 'android.arch.persistence.room:compiler:1.1.1'
+    implementation "androidx.room:room-runtime:$room_version"
+    androidTestImplementation "androidx.room:room-testing:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
 
     // roomigrant
     compileOnly project(':RoomigrantLib')

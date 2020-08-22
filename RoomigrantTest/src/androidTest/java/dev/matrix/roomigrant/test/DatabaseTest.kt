@@ -1,10 +1,9 @@
 package dev.matrix.roomigrant.test
 
-import android.arch.persistence.room.testing.MigrationTestHelper
 import android.support.test.InstrumentationRegistry
+import androidx.room.testing.MigrationTestHelper
 import org.junit.Rule
 import org.junit.Test
-import android.arch.persistence.room.Database as DatabaseAnnotation
 
 /**
  * @author matrixdev
